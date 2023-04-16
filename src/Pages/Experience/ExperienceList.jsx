@@ -9,17 +9,19 @@ function ExperienceList() {
   );
   return (
     <>
-      {exLoad && <p>Data Fetching Please Wait ....</p>}
-      {exData && (
-        <div className="experienceList">
-          <img className="experienceList-img" src={exData.icon} alt="" />
-          <h4 className="experienceList-title">{exData.title}</h4>
-          <p className="experienceList-text">{exData.info}</p>
-          <Link to={"/experience"}>
-            <button className="ortga">Ortga</button>
-          </Link>
-        </div>
-      )}
+      <div className="ex-list">
+        {exLoad && <p>Malumotlar yuklanmoqda....</p>}
+        {exData && (
+          <div className="experienceList">
+            <img className="experienceList-img" src={exData.icon} alt="" />
+            <h4 className="experienceList-title">{exData.title}</h4>
+            <p className="experienceList-text">{exData.info}</p>
+            <Link to={"/experience"}>
+              <button className="ortga">Ortga</button>
+            </Link>
+          </div>
+        )}
+      </div>
     </>
   );
 }

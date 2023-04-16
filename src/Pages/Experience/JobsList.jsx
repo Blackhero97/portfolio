@@ -8,12 +8,12 @@ function JobsList() {
   );
   return (
     <>
-      {exJobLoad && <p>Data Fetching Please Wait ....</p>}
+      {exJobLoad && <p>Malumotlar yuklanmoqda....</p>}
       {exJobData && (
         <div className="jobList">
           <img className="jobList-img" src={exJobData.icon} alt="" />
-          <h4 className="jobList-title">{exJobData.title}</h4>
-          <p className="jobList-text">{exJobData.text}</p>
+          <h4 className="jobList-title">{exJobData.title} dagi faoliyatim</h4>
+          <p className="jobList-text">{exJobData.info}</p>
           <Link to={"/experience"}>
             <button className="ortga">Ortga</button>
           </Link>

@@ -7,7 +7,7 @@
   list-style: none;
   text-decoration: none;
 }
-:root {
+:root { 
   --fontActay: "ActayWide-Bold";
   --shadow: 5px 5px 30px #9fa0fd2f;
 }
@@ -25,9 +25,10 @@
 }
 /* home and aside */
 body {
-  /* background-color: #fff8cf;
-  background-image: linear-gradient(90deg, #fdfae6 25%, #ede9ff 75%); */
   background: #f8f8f8;
+}
+span {
+  font-weight: 600;
 }
 .links-box {
   margin-top: 10px;
@@ -63,28 +64,24 @@ input {
   outline: none;
 }
 
-.App {
-}
 .portfolio-box {
   max-width: 1400px;
   width: 100%;
   margin: auto;
   display: flex;
   background: transparent;
-  border-radius: 40px;
-  /* padding: 20px; */
   height: 100vh !important;
   overflow: hidden;
+  padding: 100px 0 0 0;
 }
 .portfolio-aside {
   max-width: 210px;
   width: 100%;
-  padding: 40px 40px 40px 40px;
+  padding: 40px;
 }
 .portfolio-content-box {
   max-width: 1120px;
   width: 100%;
-  padding-top: calc(20px + (100 - 20) * (100vw - 320px) / (1400 - 320));
 }
 .info-box {
   display: flex;
@@ -110,7 +107,7 @@ nav ul {
 }
 
 .home {
-  padding: calc(14px + (20 - 14) * (100vw - 320px) / (1400 - 320));
+  padding: 100px 20px;
 }
 .links-box {
   display: flex;
@@ -124,7 +121,7 @@ nav ul {
 .phone-number,
 .email-address {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
   line-height: 17px;
   color: #716e79;
 }
@@ -137,15 +134,19 @@ nav ul {
 .img-wrapper img {
   width: 100%;
 }
-.home-links {
-  padding: 0 20px;
-}
 .home-subtitle {
   font-family: var(--fontActay);
   font-weight: 500;
-  font-size: calc(40px + (52 - 40) * (100vw - 320px) / (1400 - 320));
-  line-height: 62px;
+  font-size: calc(27px + (50 - 40) * (100vw - 320px) / (1400 - 320));
+  line-height: inherit;
   color: #33303e;
+}
+.home i {
+  color: #ee70a9;
+}
+sup {
+  font-size: 22px;
+  padding: 10px;
 }
 .home-text {
   margin: 15px 0 25px 0;
@@ -154,6 +155,7 @@ nav ul {
   line-height: 28px;
   color: #716e79;
 }
+
 .home-btns {
   display: flex;
   gap: 20px;
@@ -227,18 +229,14 @@ button {
 .block-btn {
   padding: 10px 25px;
   margin: 30px 0;
-  color: #000;
+  color: #fff;
   font-size: 18px;
-  border: 1.8px dashed #a5a5a5;
-  background: transparent;
+  background: #ee70a9;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
 }
 .block-btn:hover {
-  border: 1.8px solid #a5a5a5;
   background: #9fa0fd;
-  color: #fff;
-  transform: translateX(2px);
 }
 .block-one ul,
 .block-two ul {
@@ -253,7 +251,7 @@ button {
   padding: 20px;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
-  border: 1px dashed transparent;
+  border: 1px solid transparent;
   background: #fff;
 }
 .block-two article {
@@ -264,7 +262,7 @@ button {
   box-shadow: var(--shadow);
   padding: 20px;
   border-radius: 7px;
-  border: 1px dashed transparent;
+  border: 1px solid transparent;
   background: #fff;
 }
 .block-two .hobbi-text {
@@ -273,7 +271,8 @@ button {
 article:hover {
   transform: translateY(-5px);
   box-shadow: none;
-  border: 1px solid #a5a5a5;
+  /* border: 1px solid #9fa0fd; */
+  cursor: pointer;
 }
 article:hover p {
   color: #000;
@@ -283,7 +282,7 @@ article b {
   transition: 0.3s ease-in-out;
 }
 article:hover b {
-  color: #9fa0fd;
+  color: #ee70a9;
 }
 article p {
   color: #000;
@@ -293,13 +292,12 @@ progress {
   margin-top: 10px;
   width: 100%;
 }
+
 label {
   display: flex;
   justify-content: space-between;
 }
-article:hover label {
-  color: #9fa0fd;
-}
+
 label {
   font-size: 16px;
   font-weight: 600;
@@ -314,6 +312,8 @@ label i {
 article:hover .number {
   color: #333;
 }
+.block-two article {
+}
 .number {
   margin-bottom: 10px;
   font-size: 16px;
@@ -327,7 +327,7 @@ article:hover .number {
 }
 .about-info-text {
   margin: 20px 0;
-  font-size: 18px;
+  font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1400 - 320));
 }
 /* About section */
 
@@ -350,22 +350,17 @@ article:hover .number {
   box-shadow: 5px 5px 30px #9fa0fd2f;
   transition: 0.3s ease-in-out;
   background: #fff;
-  border: 1.5px solid transparent;
   border-radius: 10px;
+  border-bottom: 5px solid transparent;
   cursor: pointer;
 }
 .services-box .services-card:hover {
   box-shadow: none;
-  border: 1.5px solid #e1e1e1;
   transform: translateY(-5px);
-  background: #9fa0fd;
-  color: #f1f1f1;
+  border-bottom: 5px solid #ee70a9;
 }
 .services-card:hover .icon-box {
-  background: #fff;
-}
-.services-card:hover i {
-  color: #9fa0fd;
+  background: #ee70a9;
 }
 .icon-box {
   width: 40px;
@@ -374,8 +369,8 @@ article:hover .number {
   justify-content: center;
   align-items: center;
   background: #9fa0fd;
+  transition: 0.3s ease-in-out;
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 .icon-box i {
   font-size: 25px;
@@ -383,7 +378,7 @@ article:hover .number {
 }
 .card-title {
   font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1400 - 320));
-  margin-bottom: 20px;
+  margin: 10px 0;
   font-family: var(--fontActay);
 }
 .services-card p {
@@ -400,9 +395,12 @@ article:hover .number {
   text-align: center;
   height: 100%;
   width: 100%;
-  /* padding: calc(14px + (20 - 14) * (100vw - 320px) / (1400 - 320)); */
   overflow: auto;
-  padding: 35px 10px;
+  padding: 50px 10px 0 10px;
+}
+.Me .home-subtitle {
+  max-width: 900px;
+  margin: auto;
 }
 .Me .swiper {
   padding: 50px 0 !important;
@@ -435,7 +433,7 @@ article:hover .number {
 .about {
   height: 100%;
   width: 100%;
-  padding: calc(14px + (20 - 14) * (100vw - 320px) / (1400 - 320));
+  padding: 30px 14px;
   overflow: auto;
 }
 .testimonials .swiper-button-next,
@@ -466,7 +464,7 @@ article:hover .number {
 .excperience-jobs {
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 30px 20px;
   overflow: auto;
 }
 .jobs {
@@ -477,7 +475,7 @@ article:hover .number {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .excperience-card,
 .jobs-card {
@@ -545,25 +543,24 @@ article:hover .number {
 .job {
   margin-top: 10px;
 }
+.job-text {
+  text-align: justify;
+}
 .ortga {
   margin-top: 10px;
-  /* display: block; */
   font-size: 15px;
   background: #ee70a9;
   padding: 5px 10px;
   border-radius: 5px;
   color: #fff;
 }
+.ex-list {
+  padding: 70px 10px;
+}
 .experienceList {
-  text-align: center;
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
 }
 
 .experienceList-img {
@@ -574,22 +571,19 @@ article:hover .number {
   margin: 20px 0;
 }
 .jobList {
-  text-align: center;
-  max-width: 600px;
+  text-align: left;
+  max-width: 800px;
   margin: auto;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
+  padding: 70px 10px;
 }
 .jobList-img {
-  max-width: 200px;
+  max-width: 150px;
 }
 .jobList-title {
   font-size: 25px;
   margin: 20px 0;
+  color: #ee70a9;
 }
 
 /* excperience */
@@ -605,8 +599,26 @@ article:hover .number {
   max-width: 900px;
   margin: auto;
 }
+
 /* Not */
+.logo-box {
+  display: none;
+}
+.logo-img {
+  width: 150px;
+}
+/* Projects */
+.projects {
+  height: 100%;
+  width: 100%;
+  padding: 30px 20px;
+  overflow: auto;
+}
+/* Projects */
 @media screen and (max-width: 1200px) {
+  .portfolio-box {
+    padding: 50px 0 0 0;
+  }
   .services-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -629,9 +641,10 @@ article:hover .number {
   .block-two ul {
     grid-template-columns: repeat(1, 1fr);
   }
-  .portfolio-content-box {
-    /* padding: 30px 20px; */
+  .block-two article {
+    min-height: 110px;
   }
+
   .excperience-box,
   .jobs-box {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -644,18 +657,22 @@ article:hover .number {
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #f8f8f8;
     height: 100vh;
     z-index: 9999;
     box-shadow: 0px 0px 20px #0000001a;
     transform: translateX(-500px);
     transition: 0.5s ease-in-out;
   }
+  .logo-box {
+    display: block;
+    position: fixed;
+    top: -10px;
+    left: 10px;
+    z-index: 8888;
+  }
   .block-two article {
     min-height: 120px;
-  }
-  .home {
-    /* padding: 50px 0; */
   }
   .block-one ul,
   .block-two ul {
@@ -674,17 +691,17 @@ article:hover .number {
     display: block;
   }
   .menu {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 10px;
-    background: #9fa0fd;
-    width: 40px;
-    height: 40px;
+    background: #ee70a9;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 20 px;
     color: #fff;
     z-index: 999999;
   }
@@ -702,7 +719,7 @@ article:hover .number {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
   .home-text-box {
-    padding: 0 60px;
+    padding: 40px 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -718,13 +735,11 @@ article:hover .number {
   }
   .home {
     display: flex;
-    justify-content: center;
+    justify-content: inherit;
     align-items: center;
-    /* padding: 50px 0; */
     flex-direction: column;
   }
-  .home-box {
-  }
+
   .home-text-box {
     order: 1;
     display: block;
@@ -732,7 +747,6 @@ article:hover .number {
   .home-links {
     order: 2;
     display: block;
-    padding: 0 20px;
     margin-top: 20px;
   }
   .services-box {
@@ -745,18 +759,18 @@ article:hover .number {
   .about-info-box {
     flex-wrap: wrap;
   }
-  .home-box {
-    background-position-y: bottom;
-    background-image: unset;
-    overflow: unset;
-    padding: calc(14px + (20 - 14) * (100vw - 320px) / (1400 - 320));
+  .Me .swiper {
+    padding: 20px 0 !important;
+  }
+  .experienceList-text {
+    font-size: 14px;
+  }
+  .ex-list {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
   }
 
-  .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .excperience-subtitle,
   .jobs-subtitle {
     text-align: center;
@@ -769,8 +783,17 @@ article:hover .number {
   .block-two ul {
     grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));
   }
+  .block-one article {
+    border-bottom: 5px solid #9fa0fd;
+  }
+  progress {
+    accent-color: #9fa0fd;
+    transition: 0.3s ease-in-out;
+  }
   .block-two article {
-    min-height: 150px;
+    min-height: 120px;
+    border-bottom: 5px solid #9fa0fd;
+    padding: 12px;
   }
   .services-box {
     display: grid;
@@ -791,28 +814,36 @@ article:hover .number {
   }
   .menu {
     top: 26px;
-    right: 30px;
+    right: 20px;
   }
   .services-title {
     text-align: center;
   }
+
   .home {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    justify-content: inherit;
+    backdrop-filter: blur(13px);
   }
-  .home-text-box {
-    order: 1;
-    display: block;
-  }
-  .home-links {
-    order: 2;
-    display: block;
-    padding: 0 20px;
-    margin-top: 20px;
+  .home-box {
+    background-image: inherit;
   }
   .links-box ul {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
+  }
+  .portfolio-aside {
+    padding: 80px 30px;
+    max-width: 250px;
+  }
+  .test-text {
+    font-size: 14px;
+  }
+  article:hover {
+    border-bottom: 5px solid #ee70a9;
+  }
+  article:hover progress {
+    accent-color: #ee70a9;
   }
 }

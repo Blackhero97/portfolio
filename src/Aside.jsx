@@ -20,27 +20,27 @@ function Aside() {
           <ul>
             <li>
               <Link onClick={Close} to={""}>
-                Home
+                Asosiy
               </Link>
             </li>
             <li>
               <Link onClick={Close} to={"about"}>
-                About
+                Men haqimda
               </Link>
             </li>
             <li>
               <Link onClick={Close} to={"services"}>
-                Services
+                Hizmatlar
               </Link>
             </li>
             <li>
               <Link onClick={Close} to={"experience"}>
-                Experience
+                Faoliyat
               </Link>
             </li>
             <li>
-              <Link onClick={Close} to={"works"}>
-                Works
+              <Link onClick={Close} to={"projects"}>
+                Loyihalar
               </Link>
             </li>
             <li>
@@ -50,7 +50,7 @@ function Aside() {
             </li>
             <li>
               <Link onClick={Close} to={"contact"}>
-                Contact
+                Boglanish
               </Link>
             </li>
             <div onClick={Close} className="close">

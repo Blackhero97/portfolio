@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import Myimg from "../imgs/remove.png";
-import Myone from "../imgs/myone.jpg";
-import Mytwo from "../imgs/mytwo.jpg";
+import Myimg from "../imgs/men.jpg";
+import Myone from "../imgs/me4.jpg";
+import Mytwo from "../imgs/me-3.jpg";
 import Mythree from "../imgs/mythree.jpg";
 import Myfour from "../imgs/myfour.jpg";
 import Myfive from "../imgs/myfive.jpg";
@@ -16,13 +16,9 @@ function Me() {
   return (
     <>
       <div className="Me">
-        <h2 className="home-subtitle">Hello I’m Hasanboy</h2>
-        <p className="home-text">
-          I work as a front-end developer in the city of Chust. I love to work
-          on anything code, from designing simple HTML pages to solving complex
-          problems. I love to illustrate as well.I am currently working mostly
-          with the react library
-        </p>
+        <h2 className="home-subtitle">
+          Salom bu yerda shaxsiy rasmlarimni ko'rishingiz mumkin
+        </h2>
         <Swiper
           breakpoints={{
             // when window width is >= 640px

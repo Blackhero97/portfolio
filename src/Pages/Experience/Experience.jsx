@@ -21,16 +21,16 @@ function Excperience() {
     <>
       <div className="excperience-jobs">
         <div className="excperience">
-          <h3 className="excperience-subtitle">Excperience</h3>
+          <h3 className="excperience-subtitle">Bilim va Ko'nikmalar</h3>
           <div className="excperience-box">
-            {exLoad && <p>Data Fetching Please Wait....</p>}
+            {exLoad && <p>Malumotlar yuklanmoqda....</p>}
             {exData && <ExperienceCard blogs={exData} />}
           </div>
         </div>
         <div className="jobs">
-          <h3 className="jobs-subtitle">Jobs</h3>
+          <h3 className="jobs-subtitle">Mexnat faoliyati</h3>
           <div className="jobs-box">
-            {exJobLoad && <p>Data Fetching Please Wait....</p>}
+            {exJobLoad && <p>Malumotlar yuklanmoqda....</p>}
             {exJobData && <ExperienceJobs blogs={exJobData} />}
           </div>
         </div>

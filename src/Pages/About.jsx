@@ -7,10 +7,11 @@ function About() {
         <div className="about-info">
           <h3 className="about-info-title">Men haqimda</h3>
           <p className="about-info-text">
-            I work as a front-end developer in the city of Chust. I love to work
-            on anything code, from designing simple HTML pages to solving
-            complex problems. I am currently working mostly with the react
-            library
+            Men Chust shahrida Front-end <span>mentor</span> sifatida
+            faoliyatimni yuritmoqdaman. Men dasturlashni yaxshi ko'raman. Oddiy
+            web sahifalardan tortib murakkab web sahifalargacha tayyorlashni o`z
+            shogirtlarimga o`rgatmoqdaman. Hozirda men asosan `React Js`
+            kutubxonasi bilan ishlab kelmoqdaman.
           </p>
           <div className="about-info-box">
             <div className="block-one">
